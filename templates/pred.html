@@ -1,0 +1,40 @@
+{% extends 'Index.html' %}
+
+{% block content  %}
+
+<main>
+
+
+
+  <div class="album py-5  bg-light">
+    <div class="container " style="width:28rem">
+
+    <div class="col">
+
+
+      <div class="card-mx-auto shadow-p" >
+
+        <img src="{{ img }}" style="width: 25rem;height:25rem" class="card-img-top-center shadow p-2 fluid" alt="...">
+
+          <div class="card-body">
+
+
+            <p class="card-text-center text-capitalize fs-5 fst-italic">{{ pred }}</p>
+                  <div class="btn-group">
+                    <form id="upload-file" action="/Caption_prediction" method="post" enctype="multipart/form-data">
+
+                      <input type="file" name="img" id ="imageUpload" accept=".png, .jpg, .jpeg" >
+
+                    <button type="submit"   class="btn btn-sm btn-outline-secondary">Predict</button>
+                    </form>
+
+
+
+                  </div>
+          </div>
+        </div>
+</div>
+</div>
+</div>
+</main>
+{% endblock %}
