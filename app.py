@@ -45,7 +45,7 @@ def  Captioning():
     if request.method == 'POST':
         f = request.files['img']
 
-        basepath ='./static/img/'
+        basepath ='./static/img/upload/'
         file_path = os.path.join(basepath, f.filename)
         f.save(file_path)
 
