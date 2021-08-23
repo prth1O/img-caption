@@ -1,0 +1,6 @@
+
+app.py
+*.pyc
+__pycache__/app.cpython-38.pyc
+*.jpg
+__pycache__/app.cpython-38.pyc
